@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PersonList Snapshot security Should match with Snapshot 1`] = `ShallowWrapper {}`;

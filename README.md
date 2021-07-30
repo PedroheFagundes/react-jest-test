@@ -2,6 +2,11 @@
 
 This project is a TDD exercise made using ReactJS Jest and Enzyme.
 
+### Testes Aplicados:
+1. executar o comando '''yarn test'''
+2. isso irá criar um relatório de cobertura do projeto bem como uma saída no terminal exibindo funções que já foram testadas e não testadas.
+3. os testes constam com os testes de snapshot, que garantem a identidide visual do componente ou tela já criado, afim de evitar modificações não planejadas.
+
 ### How to run this project 
 1. Git Clone this project (to access the code and the project): git@github.com:PedroheFagundes/react-jest-test.git
 2. Npm install (to install all the project dependencies);
