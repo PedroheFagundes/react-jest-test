@@ -1,6 +1,6 @@
 import { shallow } from 'enzyme';
-import App from './App';
-import PersonList from './PersonList';
+import App from '../App';
+import PersonList from '../PersonList';
 
 
 describe('App', () => {
@@ -9,6 +9,15 @@ describe('App', () => {
 
   beforeAll(() => {
     appWrapper = shallow(<App />);
+  });
+
+  describe('Snapshot secutiry', () => {
+
+    it('should match with Snapshot', () => {
+      const render = shallow(<App />);
+      expect(render).toMatchSnapshot();
+    });
+
   });
 
   it('renders a person list', () => {

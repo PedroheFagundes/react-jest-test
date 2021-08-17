@@ -1,8 +1,21 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import PersonList from './PersonList';
+import PersonList from '../PersonList';
 
 describe('PersonList', () => {
+
+    describe('Snapshot security', () => {
+
+        it('Should match with Snapshot', () => {
+            const people = [
+                { firstName: 'Alan', lastName: 'Turing' },
+                { firstName: 'Chevy', lastName: 'Chase' }
+            ];
+            const render = shallow(<PersonList people = {people}/>);
+            expect(render).toMatchSnapshot();
+        });
+
+    });
 
     it('renders a ul element', () => {
         const personListWrapper = shallow(<PersonList />);
